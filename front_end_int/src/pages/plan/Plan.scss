@@ -1,0 +1,19 @@
+/* Add your styles here */
+.hostel-page {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .datatable-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  /* Add more styles as needed */

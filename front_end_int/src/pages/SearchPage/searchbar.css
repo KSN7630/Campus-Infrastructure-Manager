@@ -1,0 +1,26 @@
+/* Searchbar.css */
+
+.home {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden; /* Added overflow: hidden */
+  }
+  
+  .search-section {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .filter-section {
+    margin-top: 20px;
+  }
+  
+  /* Add more styles as needed */
+  

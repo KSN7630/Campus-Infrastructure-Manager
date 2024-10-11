@@ -1,0 +1,238 @@
+// .new {
+//   width: 100%;
+//   display: flex;
+
+//   .newContainer {
+//     flex: 7;
+
+//     .top,
+//     .bottom {
+//       -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+//       box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+//       padding: 10px;
+//       margin: 20px;
+//       display: flex;
+
+//       h1 {
+//         color: lightgray;
+//         font-size: 20px;
+//       }
+
+//       .left {
+//         flex: 1;
+//         text-align: center;
+
+//         img {
+//           width: 100px;
+//           height: 100px;
+//           border-radius: 50%;
+//           object-fit: cover;
+//         }
+//       }
+
+//       .right {
+//         flex: 2;
+
+//         form {
+//           display: flex;
+//           flex-wrap: wrap;
+//           gap: 30px;
+//           justify-content: space-around;
+
+//           .formInput {
+//             width: 40%;
+//             // display: flex;
+//             // justify-content: space-around;
+
+//             label {
+//               display: flex;
+//               align-items: center;
+//               gap: 10px;
+
+//               .icon {
+//                 cursor: pointer;
+//               }
+//             }
+
+//             input {
+//               width: 100%;
+//               padding: 5px;
+//               border: none;
+//               border-bottom: 1px solid gray;
+//             }
+//           }
+
+//           button {
+//             width: 150px;
+//             padding: 10px;
+//             border: none;
+//             background-color: teal;
+//             color: white;
+//             font-weight: bold;
+//             cursor: pointer;
+//             margin-top: 10px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// .new {
+//   width: 100%;
+//   display: flex;
+
+//   .newContainer {
+//     flex: 6;
+
+//     .top,
+//     .bottom {
+//       -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+//       box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+//       padding: 10px;
+//       margin: 20px;
+//       display: flex;
+
+//       h1 {
+//         color: lightgray;
+//         font-size: 20px;
+//       }
+
+//       .left {
+//         flex: 1;
+//         text-align: center;
+
+//         img {
+//           width: 100px;
+//           height: 100px;
+//           border-radius: 50%;
+//           object-fit: cover;
+//         }
+//       }
+
+//       .right {
+//         flex: 2;
+
+//         form {
+//           display: flex;
+//           flex-wrap: wrap;
+//           gap: 30px;
+//           justify-content: space-around;
+
+//           .formInput {
+//             width: 30%; // Adjust the width based on your design needs
+//             display: flex;
+//             flex-direction: column; // Stack label and input vertically
+//             gap: 10px; // Add some vertical spacing between label and input
+
+//             label {
+//               display: flex;
+//               align-items: center;
+//               gap: 10px;
+
+//               .icon {
+//                 cursor: pointer;
+//               }
+//             }
+
+//             input {
+//               width: 100%;
+//               padding: 5px;
+//               border: none;
+//               border-bottom: 1px solid gray;
+//             }
+//           }
+
+//           button {
+//             width: 150px;
+//             padding: 10px;
+//             border: none;
+//             background-color: teal;
+//             color: white;
+//             font-weight: bold;
+//             cursor: pointer;
+//             margin-top: 10px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .formInput {
+//     width: 100%; // Adjust the width for smaller screens
+//   }
+// }
+
+
+
+@import "../../style/variables.scss";
+.new {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.724);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+    .modal{
+      padding: 50px;
+      border-radius: 10px;
+      background-color: $main-bg;
+      position: relative;
+  
+      h1 {
+        margin-bottom: 40px;
+        font-size: 24px;
+        color: $soft-color;
+      }
+  
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+  
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 500px;
+        justify-content: space-between;
+  
+        .item {
+          width: 100%;
+          display: flex;
+          gap: 30px;
+          margin-bottom: 6px;
+          align-items:stretch;
+  
+          label {
+            font-size: 14px;
+          }
+          .labelText{
+            color:white
+          }
+  
+          input {
+            padding: 10px;
+            background-color: transparent;
+            color: white;
+            outline: none;
+            border: 1px solid $soft-color;
+            border-radius: 3px;
+          }
+        }
+        button {
+          width: 100%;
+          padding: 10px;
+          cursor: pointer;
+        }
+      }
+}
+}

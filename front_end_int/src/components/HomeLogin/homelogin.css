@@ -1,0 +1,170 @@
+.login-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .menu ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .menu ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .bich{
+    align-self: auto;
+  }
+
+  .background-image {
+    background-image: url("../../images/loginbackgroundimg.jpeg"); 
+    /* background-image: url("https://images.shiksha.com/mediadata/images/articles/1695895077phpMXsvE4.jpeg"); */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(90%) contrast(110%) saturate(120%);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .login-form {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 90px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 700px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+  
+  .form-group-homelogin {
+    margin-bottom: 20px;
+  }
+  
+  .form-group-homelogin label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group-homelogin input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button-homelogin {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+  
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+  
+  
+  /* button-homelogin:hover {
+    background-color: #0056b3;
+  } */
+  
+  p {
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .modal-homelogin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .forgot-password-form {
+    margin-top: 20px;
+  }
+  
+  .forgot-password-form input {
+    margin-bottom: 10px;
+  }
+  
+  .close-button-homelogin{
+    padding-top: 20px;
+    margin-top: 10px;
+    width:"200";
+    height:"50";
+  }
+  

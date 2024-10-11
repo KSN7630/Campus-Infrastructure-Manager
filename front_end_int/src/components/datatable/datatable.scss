@@ -1,0 +1,105 @@
+// .datatable {
+//   height: 400px;   //height of table
+//   padding: 10px;   //space around the outer div
+
+//   .datatableTitle{
+//     width: 100%;
+//     font-size: 24px;
+//     color: rgb(15, 218, 35);
+//     margin-bottom: 10px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+
+//     .link{
+//       text-decoration: none;
+//       color: rgb(7, 173, 79);
+//       font-size: 16px;
+//       font-weight: 400;
+//       border: 1px solid rgb(24, 131, 3);
+//       padding: 5px;
+//       border-radius: 5px;
+//       cursor: pointer;
+//     }
+//   }
+//   .cellAction {
+//     display: flex;
+//     align-items: center;
+//     gap: 10px;
+
+//     .viewButton {
+//       padding: 2px 5px;
+//       border-radius: 5px;
+//       color: rgb(255, 255, 255);
+//       border: 1px dotted rgba(0, 0, 139, 0.596);
+//       cursor: pointer;
+//     }
+
+//     .deleteButton {
+//       padding: 2px 5px;
+//       border-radius: 5px;
+//       color: rgb(255, 255, 255);
+//       border: 1px dotted rgba(197, 1, 43, 0.6);
+//       cursor: pointer;
+//     }
+//   }
+// }
+
+
+.datatable {
+  height: 500px;   //height of table
+  padding: 10px;   //space around the outer div
+  width: 100%;
+  
+  .datatableTitle{
+    font-size: 24px;
+    color: rgb(15, 218, 35);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .link{
+      text-decoration: none;
+      color: rgb(7, 173, 79);
+      font-size: 16px;
+      font-weight: 400;
+      border: 1px solid rgb(24, 131, 3);
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  .dataGrid{
+    background: white;
+    padding: 20px;
+
+    .MuiDataGrid-toolbarContainer{
+      flex-direction: row-reverse;
+    }    
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .viewButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: #ffffff;
+      background-color: green;
+      border: 1px dotted rgba(0, 0, 139, 0.596);
+      cursor: pointer;
+    }
+
+    .deleteButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: #ffffff;
+      background-color:red;
+      border: 1px dotted rgba(197, 1, 43, 0.6);
+      cursor: pointer;
+    }
+  }
+}

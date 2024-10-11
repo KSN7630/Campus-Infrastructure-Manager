@@ -1,0 +1,127 @@
+/* statsComponent.css */
+
+/* Style the chart container */
+.occupancy-chart-container {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Style the chart title */
+.occupancy-chart-container h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+/* Style the radio buttons and select dropdowns */
+.radio-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.radio-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.select-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.select-dropdown {
+  display: inline-block;
+}
+
+/* Style the date pickers and Apply button */
+.date-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.date-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.date-field {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tooltip styles */
+.tooltip {
+  background-color: rgba(203, 33, 33, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Error message style */
+.err-message {
+  color: red;
+  font-size: 18px;
+}
+
+/* Style the Loader component */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust as needed */
+}
+
+/* Style the AlertPopup component */
+.alert-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  max-width: 300px;
+  text-align: center;
+}
+
+.alert-popup h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.alert-popup p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.alert-popup button {
+  padding: 8px 16px;
+  margin-top: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.alert-popup button:hover {
+  background-color: #0056b3;
+}

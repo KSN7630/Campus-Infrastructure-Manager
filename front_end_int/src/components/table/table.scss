@@ -1,0 +1,44 @@
+// Updated SCSS
+.data-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 300px; /* Increased width for better layout */
+  text-align: center;
+  background-color: white;
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: green;
+  }
+
+  .down {
+    display: flex;
+    justify-content: space-between; /* Align items in two columns */
+    gap: 10px;
+  }
+
+  
+
+  .left {
+    width: 58%; /* Adjust the width of the right column as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .right {
+    width: 40%; /* Adjust the width of the left column as needed */
+  }
+
+  .count {
+    font-size: 14px;
+  }
+
+  .chartDiv {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,74 @@
+.room-filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.filtered-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+}
+
+.room-filter-input {
+  flex-grow: 1;
+  margin: 5px;
+  padding: 8px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+}
+
+.room-filter-button,
+.room-filter-cancel-button {
+  flex-basis: 48%;
+  margin: 10px;
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.room-filter-button:hover,
+.room-filter-cancel-button:hover {
+  background-color: #2980b9;
+}
+
+.custom-select {
+  width: 100%;
+  max-width: 100%; /* Adjust the max-width as needed */
+  margin-top: 10px;
+}
+
+.custom-select__control {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.custom-select__control:hover {
+  border-color: #aaa;
+}
+
+.custom-select__menu {
+  width: 100%;
+  max-width: 100%;
+}
+
+.custom-select__option {
+  background-color: white;
+}
+
+.custom-select__option:hover {
+  background-color: #f5f5f5;
+}

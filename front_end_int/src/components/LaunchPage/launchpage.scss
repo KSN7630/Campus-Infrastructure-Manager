@@ -1,0 +1,188 @@
+// launchpage.scss
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.launchpage-container {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Serif', serif; /* Apply PT Serif font to the entire page */
+  background-color: #bde0fe; /* Light blue background color */
+
+  .tilak{
+    position: fixed; /* Stick the navbar to the top */
+    top: 0; /* Align to the top of the viewport */
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2; /* Whitish background color */
+    color: #333; /* Text color for better visibility */
+    display: flex;
+    justify-content: center; /* center items horizontally */
+    align-items: center; /* center items vertically */
+    padding: 10px 0;
+    z-index: 1000; /* Ensure the navbar is above other content */
+
+    .logo {
+      img {
+        margin-left: 10px;
+        height: 50px; /* slightly larger size */
+        width: 50px; /* ensuring circular shape */
+        border-radius: 50%; /* Make the logo circular */
+        border: 0.5px solid #333; /* darker border for contrast */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+      }
+    }
+
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        margin-left: 20px;
+        a {
+          color: #333; /* Text color for better visibility */
+          text-decoration: none;
+          font-weight: bold; /* Make the text bold */
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    margin: 0;
+    padding: 0;
+    padding-top: 70px; /* Adjusted padding to prevent content from being hidden behind the navbar */
+
+    .background-image {
+      //background-image: url("https://cache.careers360.mobi/media/article_images/2023/5/5/featured-image-iit-jodhpur.webp");
+      background-image: url("/images/OIE_Background_Image.png");
+      // background-image: url("https://images.shiksha.com/mediadata/images/articles/1695895077phpMXsvE4.jpeg");
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: calc(100vh - 90px); /* Adjusted height to accommodate navbar */
+      position: relative;
+      margin-bottom: 20px; /* added margin to separate from footer */
+      filter: brightness(200%) contrast(110%) saturate(120%); /* Apply bluish filter to the image */
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        color: #fff;
+
+        .title {
+          font-family: 'Bitter', serif; /* Apply Bitter font to titles */
+          font-size: 3rem;
+          margin-bottom: 10px;
+          font-weight: 700; /* Increase font weight */
+          color: #ffc107; /* Yellow text color */
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for visibility */
+        }
+
+        .subtitle {
+          font-size: 2rem;
+          font-weight: 700; /* Increase font weight */
+          color: #ffc107; /* Yellow text color */
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for visibility */
+          /* Additional styles */
+        }
+      }
+    }
+
+    .about-section {
+      //background-color: #445dfc; /* Light bluish background color for about section */
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwF-FH_hObNXiqAQZkAUjHctPSY1Vc-ie1nAStwbOoTCGNL2VINEb5jGN1A3mCNNzMZ2c&usqp=CAU");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 40px 20px; /* Adjust padding as needed */
+      text-align: center;
+
+      .about-content {
+        max-width: 800px;
+        margin: 0 auto;
+
+        h2 {
+          color: #8CABFF;
+          font-family: 'Bitter', serif; /* Apply Bitter font to headings */
+          font-size: 2.5rem;
+          margin-bottom: 20px;
+          font-weight: 700; /* Increase font weight */
+        }
+
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 15px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: #070F2B;
+    color: #fff;
+    padding: 40px 20px;
+    margin: 0;
+    padding: 0;
+    margin : auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    //margin-left: 20px;
+    //margin-right: 20px;
+    //margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .contact-info {
+        flex: 1;
+      }
+
+      .quick-links,
+      .external-links {
+        flex: 1;
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin-bottom: 10px;
+          }
+
+          a {
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

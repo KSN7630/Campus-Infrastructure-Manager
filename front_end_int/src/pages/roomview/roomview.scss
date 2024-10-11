@@ -1,0 +1,217 @@
+// styles.scss
+
+// .userview {
+//   width: 100%;
+//   display: flex;
+
+//   .userviewContainer {
+//     flex: 7;
+
+//     .top {
+//       -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+//       box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+//       padding: 10px;
+//       margin: 20px;
+//       display: flex;
+
+//       h1 {
+//         color: lightgray;
+//         font-size: 20px;
+//       }
+//     }
+//     .bottom{
+//       -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+//       box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+//       padding: 10px;
+//       margin: 20px;
+//       display: flex;
+
+//       .right {
+ 
+//         .formdata{
+
+//         .formInputRow{
+          
+            
+//           .formInput {
+//             width: 100%;
+//             display: flex;
+//             justify-content: space-around;
+
+//             @media (min-width: 768px) {
+//               width: 48%;
+//             }
+
+//             label {
+//               display: block;
+//               margin-bottom: 5px;
+
+//               .icon {
+//                 cursor: pointer;
+//               }
+//             }
+
+//             input,
+//             textarea,
+//             select {
+//               width: 30%;
+//               padding: 5px;
+//               border: none;
+//               border-bottom: 1px solid gray;
+//             }
+
+//             textarea {
+//               resize: vertical;
+//             }
+
+//             .passwordInput {
+//               display: flex;
+//               align-items: center;
+
+//               input {
+//                 flex: 1;
+//                 padding: 5px;
+//                 border: none;
+//                 border-bottom: 1px solid gray;
+//               }
+
+//               .passwordToggle {
+//                 padding: 5px;
+//                 border: none;
+//                 background-color: transparent;
+//                 cursor: pointer;
+//                 color: teal;
+//               }
+//             }
+//           }
+
+//           button {
+//             width: 100%;
+//             padding: 10px;
+//             border: none;
+//             background-color: teal;
+//             color: white;
+//             font-weight: bold;
+//             cursor: pointer;
+//             margin-top: 10px;
+//           }
+//         }
+//       }
+//       }
+//     }
+//   }
+
+//   .datatable-container {
+//     margin-top: 20px;
+//   }
+// }
+
+
+.userview {
+  width: 100%;
+  display: flex;
+  
+  
+  .userviewContainer {
+    flex: 7;
+    
+   
+    .top,
+    .bottom {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 10px;
+      margin: 20px;
+      display: flex;
+      flex-direction: column; /* Adjusted to column layout */
+ 
+      h1 {
+        color: lightgray;
+        font-size: 20px;
+      }
+    }
+
+    .bottom {
+      display: flex; /* Added to make .right and .datatable-container siblings */
+
+      .right {
+        flex: 2;
+
+        .formdata {
+          .formInputRow {
+            display: flex; /* Added to make the formInputRow items side by side */
+            justify-content: space-between; /* Added to space them evenly */
+
+            .formInput {
+              width: 48%; /* Adjusted width for two columns */
+              display: flex;
+              flex-direction: column; /* Changed to column layout for inner items */
+
+              @media (min-width: 768px) {
+                width: 30%; /* Adjust as needed for larger screens */
+              }
+
+              label {
+                display: block;
+                margin-bottom: 5px;
+
+                .icon {
+                  cursor: pointer;
+                }
+              }
+
+              input,
+              textarea,
+              select {
+                width: 100%; /* Adjusted width for full width */
+                padding: 5px;
+                border: none;
+                border-bottom: 1px solid gray;
+              }
+
+              textarea {
+                resize: vertical;
+              }
+
+              .passwordInput {
+                display: flex;
+                align-items: center;
+
+                input {
+                  flex: 1;
+                  padding: 5px;
+                  border: none;
+                  border-bottom: 1px solid gray;
+                }
+
+                .passwordToggle {
+                  padding: 5px;
+                  border: none;
+                  background-color: transparent;
+                  cursor: pointer;
+                  color: teal;
+                }
+              }
+            }
+          }
+
+          button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: teal;
+            color: white;
+            
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .datatable-container {
+        margin-top: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+/* LineCanva.css */
+
+/* Container styling */
+.occupancy-chart-container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styling */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Radio button group styling */
+  .radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .radio-group label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .radio-group input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  /* Select input styling */
+  .select-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .select-container label {
+    margin-bottom: 5px;
+  }
+  
+  .select-container select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Date input styling */
+  .date-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .date-inputs label {
+    margin-bottom: 5px;
+  }
+  
+  .date-inputs input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Apply button styling */
+  .date-inputs button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .date-inputs button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Loading and error message styling */
+  .loading,
+  .error {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #ff5733;
+  }
+  
+  /* Chart container styling */
+  .canvasjs-chart-container {
+    margin-top: 20px;
+  }
+  

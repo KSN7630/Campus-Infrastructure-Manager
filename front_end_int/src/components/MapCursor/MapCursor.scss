@@ -1,0 +1,87 @@
+// MapCursor.scss
+
+.image-editor-container {
+  position: relative;
+
+  .edit-mode-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    button {
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  .image-frame {
+    position: relative;
+    display: inline-block;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      cursor: default;
+      position: relative;
+
+      &:hover {
+        filter: brightness(80%);
+        transition: filter 0.3s ease;
+      }
+    }
+
+    .selection-circle {
+      border: 2px dashed rgba(0, 0, 0, 0.5);
+      pointer-events: none;
+      z-index: 1000;
+      border-radius: 50%;
+      position: absolute;
+
+      &::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+      }
+    }
+  }
+
+  .editor-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+
+      select,
+      input {
+        margin-top: 5px;
+      }
+    }
+
+    button {
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}
+

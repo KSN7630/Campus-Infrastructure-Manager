@@ -1,0 +1,125 @@
+// .widget2 {
+//   display: flex;
+//   justify-content: space-between;
+//   flex: 1;
+//   padding: 10px;
+//   background: linear-gradient(to right, #60e7e1,#ff4ed3);
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//   border-radius: 15px;
+//   height: 200px;
+//   transition: transform 0.3s ease-in-out;
+
+//   &:hover {
+//     transform: scale(1.05);
+//   }
+
+//   .left,
+//   .right {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+
+//     .title {
+//       font-weight: bold;
+//       font-size: 16px;
+//       color: #333;
+//     }
+
+//     .counter {
+//       font-size: 14px;
+//       font-weight: 600;
+//       color: #222;
+//     }
+
+//     .links {
+//       display: flex;
+//       justify-content: space-between;
+
+//       .link {
+//         width: max-content;
+//         font-size: 12px;
+//         border: 1px solid transparent;
+//         background: linear-gradient(to right, #ff4e50, #fc913a);
+//         background-clip: padding-box;
+//         transition: border 0.3s ease-in-out;
+//         cursor: pointer;
+
+//         &:hover {
+//           border: 1px solid #ff4e50;
+//         }
+//       }
+//     }
+
+//     .icon {
+//       font-size: 24px;
+//       padding: 10px;
+//       border-radius: 50%;
+//       color: white;
+//       background-color: #3498db;
+//     }
+//   }
+// }
+
+.widget2 {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 15px; /* Increased padding for better spacing */
+    background: linear-gradient(to right, #6a7bd7, #70c9c0); /* Updated background color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adjusted box-shadow */
+    border-radius: 15px;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    .left,
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      .title {
+        font-weight: bold;
+        font-size: 18px; /* Increased font size for title */
+        color: rgb(243, 255, 12); /* Set font color to white */
+        margin-bottom: 8px; /* Added margin for better spacing */
+      }
+  
+      .counter {
+        font-size: 16px; /* Increased font size for counter */
+        font-weight: 600;
+        color: white; /* Set font color to white */
+      }
+
+  
+        .link {
+          width: max-content;
+          font-size: 14px; /* Increased font size for link */
+          border: 1px solid transparent;
+          background: linear-gradient(to right, #738ede, #75dac3); /* Updated link background color */
+          background-clip: padding-box;
+          transition: border 0.3s ease-in-out;
+          cursor: pointer;
+          color: white; /* Set font color to white */
+          text-decoration: none;
+          padding: 6px 12px; /* Added padding for better button appearance */
+  
+          &:hover {
+            border: 1px solid #ff4e50;
+          }
+        }
+      
+  
+      .icon {
+        font-size: 36px; /* Increased font size for icon */
+        padding: 15px; /* Increased padding for better spacing */
+        border-radius: 50%;
+        color: white;
+        background-color: #3498db;
+      }
+    }
+  }
+  
